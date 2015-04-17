@@ -16,5 +16,7 @@ namespace MovieRental.Areas.Admin.Models
 
         public List<string> UnresolveTitles { get; set; }
         public List<Movie> ResolvedMovie { get; set; }
+
+
     }
 }
