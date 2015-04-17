@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental", "MovieRental\MovieRental.csproj", "{C546996F-0CF5-4BA9-BD18-38EDB89BAAC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.Data", "MovieRental.Data\MovieRental.Data.csproj", "{C0F3B809-F1F5-4229-BAA5-B23C4FC6E56A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.Models", "MovieRental.Models\MovieRental.Models.csproj", "{8D61C1BA-7B06-4471-BB0A-AA5E6CAE4D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.BL", "MovieRental.BL\MovieRental.BL.csproj", "{00F233DB-4030-4926-A447-ECD4F5820499}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C546996F-0CF5-4BA9-BD18-38EDB89BAAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C546996F-0CF5-4BA9-BD18-38EDB89BAAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C546996F-0CF5-4BA9-BD18-38EDB89BAAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C546996F-0CF5-4BA9-BD18-38EDB89BAAC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F3B809-F1F5-4229-BAA5-B23C4FC6E56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F3B809-F1F5-4229-BAA5-B23C4FC6E56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F3B809-F1F5-4229-BAA5-B23C4FC6E56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F3B809-F1F5-4229-BAA5-B23C4FC6E56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D61C1BA-7B06-4471-BB0A-AA5E6CAE4D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D61C1BA-7B06-4471-BB0A-AA5E6CAE4D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D61C1BA-7B06-4471-BB0A-AA5E6CAE4D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D61C1BA-7B06-4471-BB0A-AA5E6CAE4D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F233DB-4030-4926-A447-ECD4F5820499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F233DB-4030-4926-A447-ECD4F5820499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F233DB-4030-4926-A447-ECD4F5820499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F233DB-4030-4926-A447-ECD4F5820499}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
