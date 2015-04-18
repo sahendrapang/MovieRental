@@ -13,12 +13,14 @@ namespace MovieRental
     {
         protected void Application_Start()
         {
+           // Database.SetInitializer<MovieRentalContext>(new DropCreateDatabaseIfModelChanges<MovieRentalContext>());
+
             AreaRegistration.RegisterAllAreas();
+
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            WebApiConfig.
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using MovieRental.Models;
 using MovieRental.BL;
 using MovieRental.Areas.Admin.Models;
+using MovieRental.Data;
 
 namespace MovieRental.Areas.Admin.Controllers
 {
@@ -47,6 +48,41 @@ namespace MovieRental.Areas.Admin.Controllers
 
             TempData["blo"] = blo;
             return View("BulkOutput", blo);
+        }
+
+        [HttpPost]
+
+        public ActionResult Save(String save)
+        {
+            List<String> messages = new List<string>();
+
+            if (save == "Yes")
+            {
+                BulkLoadOutput blo = (BulkLoadOutput) TempData["blo"];
+                List<Movie> movies = blo == null?
+                    new List<Movie>():blo.ResolvedMovie;
+                MovieRepository rep = new MovieRepository();
+
+                foreach (Movie m in movies)
+                {
+                    try
+                    {
+                        rep.Add(m);
+                        rep.Save();
+                        messages.Add("Successfully add movie " + m.Title);
+                    }
+                    catch
+                    {
+                        messages.Add("Unable to add movie " + m.Title + ". Perhaps it is already in database.");
+                    }
+                }
+            }
+            else
+            {
+                messages.Add("Bulk Load operation is successfully cancelled.");
+            }
+
+            return View(messages);
         }
     }
 }

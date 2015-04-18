@@ -1,0 +1,13 @@
+﻿@model List<String>
+         
+@{
+    ViewBag.Title = "Bulk Load Result";
+}
+
+<h2>Bulk Load Result</h2>
+@foreach (String message in Model)
+{
+    <p>
+        @message
+    </p>
+}

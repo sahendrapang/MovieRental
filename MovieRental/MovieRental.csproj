@@ -205,6 +205,7 @@
     <Content Include="Areas\Admin\Views\BulkLoad\Index.cshtml" />
     <Content Include="Areas\Admin\Views\BulkLoad\BulkOutput.cshtml" />
     <Content Include="Areas\Admin\Views\BulkLoad\DisplayTemplates\Movie.cshtml" />
+    <Content Include="Areas\Admin\Views\BulkLoad\Save.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
