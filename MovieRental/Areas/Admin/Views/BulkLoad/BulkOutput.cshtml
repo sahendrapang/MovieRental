@@ -20,7 +20,9 @@
     <h3>Match Found For The Following Movies</h3>
     @foreach (var m in Model.ResolvedMovie)
     {
-        <p>@m.Title</p>
+        <div style="width: 320px; height:520px;float:left">
+            @Html.DisplayFor(modelItem => m)
+        </div>
     }
 </div>
 
